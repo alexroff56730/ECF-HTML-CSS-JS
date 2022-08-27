@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR-WEB-OUEST - Développeur Web et Web mobile</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-place">
+            <img src="https://ar-web-ouest.fr/wp-content/uploads/2022/02/cropped-Logo-Alex.png" alt="logo du site">
+        </div>
+        <div class="header-menu">
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="projets.html">Mes projets</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="section-devis">
+            <form method="post">
+                <div>
+                    <label for="type">type projet</label>
+                    <select name="type" id="type" onchange="tp(this)">
+                        <option value="0">selectionner votre type</option>
+                        <option value="1">site vitrine</option>
+                        <option value="2">site e-commerce</option>
+                        <option value="3">application web</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="outils">outils à utiliser</label>
+                    <select name="outils" id="outils" onchange="Outils(this)">
+                        <option value="0">selectionner votre type</option>
+                        <option value="1">wordpress</option>
+                        <option value="2">prestashop</option>
+                        <option value="3">REACT JS</option>
+                        <option value="4">REACT NATIVE</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="time">temps donné</label>
+                    <select name="time" id="time" onchange="timing(this)">
+                        <option value="0">selectionner votre type</option>
+                        <option value="1">1 jour</option>
+                        <option value="2">2 jours</option>
+                        <option value="3">3 jours</option>
+                    </select>
+                </div>
+
+                <div style="padding-top: 10px; color: rgb(203, 188, 188); font-size: 1.5em;">
+                    <input type="button" value="send" onclick="send()">
+                </div>
+
+                <div id="champs_result" style="margin-top: 20px; padding: 10px; background-color: rgba(123, 208, 67, 0.5); color: rgb(203, 188, 188); font-size: 1.5em;">
+                    <span id="resultat"></span>
+                </div>
+            </form>
+        </div>
+
+        <script src="script/script.js"></script>
+    </section>
+    <footer>
+        <div>
+            <img src="https://ar-web-ouest.fr/wp-content/uploads/2022/02/cropped-Logo-Alex.png" alt="logo du site">
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="projets.html">projets</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Devis</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
