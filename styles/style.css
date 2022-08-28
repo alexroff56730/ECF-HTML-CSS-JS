@@ -356,6 +356,16 @@ section .contact .Btn-box .send-champs {
     background-color: rgb(71, 153, 71);
 }
 
+section .contact #notif-contact {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(77, 158, 77);
+    font-size: 1.0em;
+    color: white;
+    visibility: hidden;
+}
+
 footer {
     margin: auto;
     width: 80%;

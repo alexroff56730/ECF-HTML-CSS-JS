@@ -1,5 +1,4 @@
 var result_final;
-document.getElementById('champs_result').style.visibility = "hidden";
 
 function tp(elem) {
     var val = elem.value;
@@ -59,5 +58,26 @@ function send() {
     } else {
         console.log("erreur");
     } 
+}
+
+function contact_send() {
+    var name = document.getElementById('name').value;
+    var fname = document.getElementById('fname').value;
+    var mail = document.getElementById('mail').value;
+    var msg = document.getElementById('msg').value;
+    var notifContact = document.getElementById('notif-contact');
+
+    if(name != '' && fname != '' && mail != '' && msg != '') {
+        notifContact.style.visibility = 'visible';
+        notifContact.innerText = 'message envoyé';
+    } else {
+        notifContact.style.visibility = 'visible';
+        notifContact.style.backgroundColor = '#a04747';
+        notifContact.innerText = "un des champs n'est pas renseigné !";
+    }
+}
+
+function resetNotif(elemClick) {
+    elemClick.style.visibility = 'hidden';
 }
 

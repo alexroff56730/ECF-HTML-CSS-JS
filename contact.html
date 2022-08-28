@@ -31,26 +31,28 @@
     <section>
         <form class="contact" action="">
             <h1 style="text-align: center; color: white">Contact</h1>
+            <div id="notif-contact" onclick="resetNotif(this)"></div>
             <div>
-                <label for="name">nom</label>
+                <label for="name">nom *</label>
                 <input type="text" class="champ" id="name">
             </div>
             <div>
-                <label for="fname">prenom</label>
+                <label for="fname">prenom *</label>
                 <input type="text" class="champ" id="fname">
             </div>
             <div>
-                <label for="mail">email</label>
+                <label for="mail">email *</label>
                 <input type="email" class="champ" id="mail">
             </div>
             <div>
-                <label for="msg">votre message</label>
+                <label for="msg">votre message *</label>
                 <textarea class="champ-msg" id="msg"></textarea>
             </div>
             <div class="Btn-box">
                 <input type="reset" class="reset-champs" value="annuler">
                 <input type="button" class="send-champs" value="envoyer" onclick="contact_send()">
             </div>
+            <script src="script/script.js"></script>
         </form>
     </section>
     <footer>
