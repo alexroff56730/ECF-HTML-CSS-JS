@@ -187,12 +187,23 @@ section .section-devis form div {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 section .section-devis form div label {
     font-size: 1.5em;
     text-transform: uppercase;
     color:rgb(203, 188, 188);
+}
+
+section .section-devis form div select {
+    text-transform: uppercase;
+    font-size: 1.0em;
+    height: 40px;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgb(203, 188, 188);
 }
 
 .mySlides {display: none}
