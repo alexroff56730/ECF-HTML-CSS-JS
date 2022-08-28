@@ -28,6 +28,31 @@
             </nav>
         </div>
     </header>
+    <section>
+        <form class="contact" action="">
+            <h1 style="text-align: center; color: white">Contact</h1>
+            <div>
+                <label for="name">nom</label>
+                <input type="text" class="champ" id="name">
+            </div>
+            <div>
+                <label for="fname">prenom</label>
+                <input type="text" class="champ" id="fname">
+            </div>
+            <div>
+                <label for="mail">email</label>
+                <input type="email" class="champ" id="mail">
+            </div>
+            <div>
+                <label for="msg">votre message</label>
+                <textarea class="champ-msg" id="msg"></textarea>
+            </div>
+            <div class="Btn-box">
+                <input type="reset" class="reset-champs" value="annuler">
+                <input type="button" class="send-champs" value="envoyer" onclick="contact_send()">
+            </div>
+        </form>
+    </section>
     <footer>
         <div>
             <img src="https://ar-web-ouest.fr/wp-content/uploads/2022/02/cropped-Logo-Alex.png" alt="logo du site">
