@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR-WEB-OUEST - Développeur Web et Web mobile</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="script/responsive.js"></script>
 </head>
 <body>
     <header>
         <div class="logo-place">
             <img src="https://ar-web-ouest.fr/wp-content/uploads/2022/02/cropped-Logo-Alex.png" alt="logo du site">
         </div>
-        <div class="header-menu">
+        <!--<div class="header-menu">
             <nav class="header-nav">
                 <ul>
                     <li>
@@ -26,6 +28,34 @@
                     </li>
                 </ul>
             </nav>
+        </div>-->
+        <div id="root">
+            <div id="topnav" class="topnav">
+                <!--<a id="home_link" class="topnav_link" href="/">HOME</a>-->
+
+                <!-- Classic Menu -->
+                <nav role="navigation" id="topnav_menu">
+                    <a id="home_link" class="topnav_link" href="index.html">ACCUEIL</a>
+                    <a class="topnav_link" href="projets.html">PROJETS</a>
+                    <a class="topnav_link" href="contact.html">CONTACT</a>
+                </nav>
+
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                    <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <!-- Responsive Menu -->
+                <nav role="navigation" id="topnav_responsive_menu">
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="projets.html">PROJETS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <section>

@@ -35,7 +35,7 @@ header .logo-place img {
     width: 100%;
 }
 
-header .header-menu .header-nav ul {
+/*header .header-menu .header-nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -54,7 +54,27 @@ header .header-menu .header-nav ul li a {
 
 header .header-menu .header-nav ul li a:hover {
     color: rgb(203, 188, 188);
-}
+}*/
+
+.topnav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .topnav_link {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+  }
+  .topnav_link:hover {
+    color: #0078b4;
+  }
+  
+  /* hide responsive menu */
+  #topnav_hamburger_icon,
+  #topnav_responsive_menu {
+    display: none;
+  }
 
 section {
     width: 80%;
@@ -400,6 +420,7 @@ footer div nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 footer div nav ul li {
