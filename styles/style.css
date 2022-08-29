@@ -84,17 +84,21 @@ section {
 }
 
 section .parallax {
-    /* The image used */
-    background-image: url("../img/banner1.jpg");
+   /* The image used */
+   background-image: url("../img/banner1.jpg");
 
-    /* Set a specific height */
-    padding: 100px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   /* Set a specific height */
+   min-height: 500px;
+ 
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 section .parallax1 {
