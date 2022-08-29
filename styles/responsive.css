@@ -165,3 +165,25 @@
         transform: rotate(-45deg);
       }
 }
+
+@media screen and (max-width: 1370px) {
+  section .section-projet1 .article-place {
+    flex-direction: column-reverse;
+  }
+
+  section .section-projet1 .article-place article h2,
+  section .section-projet1 .article-place article p {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  section .section-projet1 .article-place figure img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .bg-text {
+    width: 100%;
+  }
+}
