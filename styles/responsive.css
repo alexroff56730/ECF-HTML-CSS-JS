@@ -164,6 +164,16 @@
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
       }
+
+      header .logo-place {
+        width: 15%;
+      }
+}
+
+@media screen and (max-width: 701px) {
+  header .logo-place {
+    width: 20%;
+  }
 }
 
 @media screen and (max-width: 1370px) {
