@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    margin: 0 auto;
+    margin: auto;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -34,27 +34,6 @@ header .logo-place {
 header .logo-place img {
     width: 100%;
 }
-
-/*header .header-menu .header-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-header .header-menu .header-nav ul li {
-    padding-left: 15px;
-}
-
-header .header-menu .header-nav ul li a {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    color: white;
-}
-
-header .header-menu .header-nav ul li a:hover {
-    color: rgb(203, 188, 188);
-}*/
 
 .topnav {
     display: flex;
